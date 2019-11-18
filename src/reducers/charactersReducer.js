@@ -2,7 +2,7 @@ import { FETCH_CHARACTERS, FETCH_CHARACTERS_LOADING, FETCH_CHARACTERS_DONE } fro
 const initialState = {
   characterList: [],
   loading: true,
-  error: 'Could not fetch characters'
+  error: 'COULD NOT FETCH CHARACTERS'
 };
 
 export default function reducer(state = initialState, action) {
