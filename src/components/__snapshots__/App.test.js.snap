@@ -4,11 +4,9 @@ exports[`App component renders App 1`] = `
 <BrowserRouter>
   <Switch>
     <Route
+      component={[Function]}
       exact={true}
       path="/"
-    />
-    <Route
-      path="/characters/:page"
     />
   </Switch>
 </BrowserRouter>
