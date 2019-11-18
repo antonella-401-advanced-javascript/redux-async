@@ -5,7 +5,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route />
+        <Route exact path="/" />
+        <Route path="/characters/:page" />
       </Switch>
     </Router>
   );
