@@ -25,7 +25,7 @@ class SimpsonsQuote extends Component {
   render() {
     if(this.props.loading) return (
       <div className={stylesSecond.Loading}>
-        <img src="./loading.gif" alt="LOADING..."/>
+        <img src="https://blog.teamtreehouse.com/wp-content/uploads/2015/05/InternetSlowdown_Day.gif" alt="LOADING..."/>
       </div>
     );
 

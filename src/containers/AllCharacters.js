@@ -19,7 +19,7 @@ export default function AllCharacters() {
 
   if(loading) return (
     <div className={styles.Loading}>
-      <img src="./loading.gif" alt="LOADING..."/>
+      <img src="https://blog.teamtreehouse.com/wp-content/uploads/2015/05/InternetSlowdown_Day.gif" alt="LOADING..."/>
     </div>
   );
 

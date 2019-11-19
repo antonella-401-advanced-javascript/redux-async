@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Character.css';
 
 const Character = ({ photoUrl, name }) => {
-  if(!photoUrl) photoUrl = './missing.png';
+  if(!photoUrl) photoUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Missing_avatar.svg/850px-Missing_avatar.svg.png';
 
   return (
     <figure className={styles.Character}>
