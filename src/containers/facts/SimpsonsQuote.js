@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Quote from '../../components/quote/Quote';
 import { setQuotePromise } from '../../actions/simpsonsActions';
 import { getQuotes, getCharacterName, getCharacterImage, getQuoteLoading, getQuoteError } from '../../selectors/simpsonsSelectors';
+import Load from '../../components/quote/Load';
 
 class SimpsonsQuote extends Component {
   static propTypes = {
@@ -27,6 +28,7 @@ class SimpsonsQuote extends Component {
     return (
       <>
         <Quote quote={this.props.quote} character={this.props.character} image={this.props.image} />
+        <Load fetchQuote={this.props.fetchQuote} />
       </>
     );
   }

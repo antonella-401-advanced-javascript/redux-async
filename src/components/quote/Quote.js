@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Quote = ({ quote, character, image }) => {
   if(!image) image = './missing.png';
-  const text = character + ':' + ' ' + '"' + quote + '"';
+  const text = ' ' + '"' + quote + '"' + ' ' + '-' + ' ' + character;
 
   return (
     <div>
