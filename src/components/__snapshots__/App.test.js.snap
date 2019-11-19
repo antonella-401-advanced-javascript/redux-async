@@ -9,6 +9,18 @@ exports[`App component renders App 1`] = `
       exact={true}
       path="/"
     />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(SimpsonsQuote)",
+          "type": [Function],
+        }
+      }
+      path="/quotes"
+    />
   </Switch>
 </BrowserRouter>
 `;
