@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Quote.css';
 
 const Quote = ({ quote, character, image }) => {
   if(!image) image = './missing.png';
   const text = ' ' + '"' + quote + '"' + ' ' + '-' + ' ' + character;
 
   return (
-    <div>
-      <img src={image} alt={character} />
-      <p>{text}</p>
-    </div>
+    <>
+      <div className={styles.Quote}>
+        <img src={image} alt={character} />
+        <p>{text}</p>
+      </div>
+    </>
   );
 };
 

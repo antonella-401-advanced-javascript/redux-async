@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Characters from '../components/characters/Characters';
 import { setCharactersPromise } from '../actions/characterActions';
 import { getCharacters, getCharactersLoading, getCharactersError } from '../selectors/characterSelectors';
+import styles from './loading.css';
 
 export default function AllCharacters() {
   const dispatch = useDispatch();
@@ -16,7 +17,11 @@ export default function AllCharacters() {
     characterPromise();
   }, []);
 
-  if(loading) return <img src="./loading.gif" alt="LOADING..."/>;
+  if(loading) return (
+    <div className={styles.Loading}>
+      <img src="./loading.gif" alt="LOADING..."/>
+    </div>
+  );
 
   if(!list) return <h1>{error}</h1>;
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Load.css';
 
 const Load = ({ fetchQuote }) => {
   return (
-    <button onClick={fetchQuote} >New Quote</button>
+    <button className={styles.Load} onClick={fetchQuote} >New Quote</button>
   );
 };
 

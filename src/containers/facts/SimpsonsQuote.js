@@ -5,6 +5,8 @@ import Quote from '../../components/quote/Quote';
 import { setQuotePromise } from '../../actions/simpsonsActions';
 import { getQuotes, getCharacterName, getCharacterImage, getQuoteLoading, getQuoteError } from '../../selectors/simpsonsSelectors';
 import Load from '../../components/quote/Load';
+import styles from './SimpsonsQuote.css';
+import stylesSecond from '../loading.css';
 
 class SimpsonsQuote extends Component {
   static propTypes = {
@@ -21,15 +23,19 @@ class SimpsonsQuote extends Component {
   }
 
   render() {
-    if(this.props.loading) return <img src="./loading.gif" alt="LOADING..."/>;
+    if(this.props.loading) return (
+      <div className={stylesSecond.Loading}>
+        <img src="./loading.gif" alt="LOADING..."/>
+      </div>
+    );
 
     if(!this.props.quote) return <h1>{this.props.error}</h1>;
 
     return (
-      <>
+      <div className={styles.Simpsons}>
         <Quote quote={this.props.quote} character={this.props.character} image={this.props.image} />
         <Load fetchQuote={this.props.fetchQuote} />
-      </>
+      </div>
     );
   }
 }
