@@ -1,0 +1,17 @@
+.Head {
+  background-color: hsl(249, 95%, 8%);
+  padding: 20px;
+
+  a {
+    display: inline-block;
+    color: whitesmoke;
+    text-shadow: .5px .5px .5px #0808d8;
+  }
+
+  a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: lightblue;
+    text-shadow: 1px 1px 1px rgb(75, 132, 218);
+  }
+} 
