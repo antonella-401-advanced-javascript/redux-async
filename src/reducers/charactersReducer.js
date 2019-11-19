@@ -1,4 +1,5 @@
 import { FETCH_CHARACTERS, FETCH_CHARACTERS_LOADING, FETCH_CHARACTERS_DONE } from '../actions/characterActions';
+
 const initialState = {
   characterList: [],
   loading: true,

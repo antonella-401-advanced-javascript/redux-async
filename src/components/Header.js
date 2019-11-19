@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <header className={styles.Head}>
       <Link to="/">Characters</Link>
+      <Link to="/quotes">Simpsons Quotes</Link>
     </header>
   );
 };
