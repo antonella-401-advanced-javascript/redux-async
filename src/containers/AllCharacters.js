@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Characters from '../components/characters/Characters';
-import { fetchCharacter } from '../actions/characterActions';
+import { setCharactersPromise } from '../actions/characterActions';
 import { getCharacters, getCharactersLoading, getCharactersError } from '../selectors/characterSelectors';
 
 export default function AllCharacters() {
@@ -10,8 +10,10 @@ export default function AllCharacters() {
   const loading = useSelector(getCharactersLoading);
   const error = useSelector(getCharactersError);
 
+  const characterPromise = () => dispatch(setCharactersPromise());
+
   useEffect(() => {
-    dispatch(fetchCharacter());
+    characterPromise();
   }, []);
 
   if(loading) return <img src="./loading.gif" alt="LOADING..."/>;

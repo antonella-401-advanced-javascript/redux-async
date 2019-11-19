@@ -6,10 +6,7 @@ export const FETCH_CHARACTERS_DONE = 'FETCH_CHARACTERS_DONE';
 
 export const fetchCharacter = () => dispatch => {
   dispatch({
-    type: FETCH_CHARACTERS_LOADING,
-    payload: getAvatars(),
-    pendingType: FETCH_CHARACTERS_LOADING,
-    fulfilledType: FETCH_CHARACTERS_DONE
+    type: FETCH_CHARACTERS_LOADING
   });
 
   return getAvatars()
@@ -24,3 +21,10 @@ export const fetchCharacter = () => dispatch => {
       });
     });
 };
+
+export const setCharactersPromise = () => ({
+  type: FETCH_CHARACTERS,
+  loadingType: FETCH_CHARACTERS_LOADING,
+  doneType: FETCH_CHARACTERS_DONE,
+  payload: getAvatars()
+});
