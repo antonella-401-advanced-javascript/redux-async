@@ -1,0 +1,12 @@
+.Loading {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  max-width: 300px;
+  margin: auto;
+  
+  img {
+    width: 100%;
+    border-radius: 40%;
+  }
+}

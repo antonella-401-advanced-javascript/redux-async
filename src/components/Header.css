@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock+SC&display=swap');
+.Head {
+  background-color: hsl(249, 84%, 17%);
+  padding: 20px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 2px 20px;
+    font-size: 20pt;
+    font-family: 'Overlock SC', cursive;
+    color: whitesmoke;
+  }
+
+  a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: lightblue;
+    text-shadow: 1px 1px 1px rgb(18, 33, 54);
+  }
+} 
